@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>
+  Braden Dressendorfer's page
+</title>
+<script>
+function check1()
+{
+  var question1 = document.quiz.question1.value;
+  if(question1 == "16")
+  {
+    document.getElementById("sub1").innerHTML = "Correct!";
+  }
+  else {
+      document.getElementById("sub1").innerHTML = "Incorrect!";
+  }
+}
+function check2()
+{
+    var question2 = document.quiz.question2.value;
+    if(question2 == "Evil Geniuses")
+    {
+      document.getElementById("sub2").innerHTML = "Correct!";
+    }
+    else {
+      document.getElementById("sub2").innerHTML = "Incorrect!";
+    }
+}
+function check3()
+{
+  var question3 = document.quiz.question3.value;
+  if(question3 == "m4")
+  {
+    document.getElementById("sub3").innerHTML = "Correct!";
+  }
+  else {
+    document.getElementById("sub3").innerHTML = "Incorrect!";
+  }
+}
+</script>
+  <body style = "background-color:lightblue;">
+    <h1>
+      Braden Dressendorfer's page
+    </h1>
+    <h2>
+      Counter-Strike Global Offensive Quiz
+    </h2>
+    <p>
+      This page is a quiz set up by Braden Dressendorfer to test the knowledge of others
+      about the video game Counter-Strike Global Offensive. Counter Strike Global Offensive is a video game
+      playable on PC allowing users to play as terrorists and counter-terrorists.
+      More information about the video game is shown
+      <a href = "https://liquipedia.net/counterstrike/Counter-Strike:_Global_Offensive" target="_blank"> here</a>
+    </p>
+    <h3>
+      Quiz Questions
+    </h3>
+    <form id = "quiz" name = "quiz">
+      <p>
+        What is the maximum score a team can get in one game?
+      </p>
+      <input type = "radio" id = "mc" name = "question1" value = "16"> 16 <BR>
+      <input type = "radio" id = "mc" name = "question1" value = "14"> 14 <BR>
+      <input type = "radio" id = "mc" name = "question1" value = "12"> 12 <BR>
+      <input type = "radio" id = "mc" name = "question1" value = "18"> 18 <BR>
+      <input id = "button" type = "button" value = "Check" onclick = "check1();">
+      <div id = "sub1">
+      </div>
+      <p>
+        Who is the number one team in the world right now?
+      </p>
+      <input type = "radio" id = "mc" name = "question2" value = "Fnatic"> Fnatic <BR>
+      <input type = "radio" id = "mc" name = "question2" value = "Team Liquid"> Team Liquid <BR>
+      <input type = "radio" id = "mc" name = "question2" value = "Evil Geniuses"> Evil Geniuses <BR>
+      <input type = "radio" id = "mc" name = "question2" value = "100 Theives"> 100 Theives <BR>
+      <input id = "button" type = "button" value = "Check" onclick = "check2();">
+      <div id = "sub2">
+      </div>
+      <p>
+        What gun is the Counter-Terrorists allowed to buy?
+      </p>
+      <input type = "radio" id = "mc" name = "question3" value = "auto"> <img src = "autosnipe.png"> <BR>
+      <input type = "radio" id = "mc" name = "question3" value = "m4"> <img src = "M4A4.png"> <BR>
+      <input type = "radio" id = "mc" name = "question3" value = "glock"> <img src = "glock.png"> <BR>
+      <input type = "radio" id = "mc" name = "question3" value = "ak"> <img src = "ak.png"> <BR>
+      <input id = "button" type = "button" value = "Check" onclick = "check3();">
+      <div id = "sub3">
+      </div>
+      <BR>
+      <input type="button" value="Reset" onClick="location.href=location.href">
+
+
+    </form>
+  </body>
+</html>
